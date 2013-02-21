@@ -216,6 +216,6 @@ if &t_Co > 255
    hi CursorColumn                ctermbg=234
    hi ColorColumn                 ctermbg=234
    hi LineNr          ctermfg=250 ctermbg=234
-   hi NonText         ctermfg=67
-   hi SpecialKey      ctermfg=67
+   hi NonText         ctermfg=232
+   hi SpecialKey      ctermfg=232
 end
