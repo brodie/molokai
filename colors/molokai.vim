@@ -87,7 +87,7 @@ if has("spell")
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
 hi Statement       guifg=#F92672               gui=bold
-hi StatusLine      guifg=#455354 guibg=fg
+hi StatusLine      guifg=#333333 guibg=fg
 hi StatusLineNC    guifg=#808080 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=italic
 hi Structure       guifg=#66D9EF
@@ -99,7 +99,6 @@ hi Typedef         guifg=#66D9EF
 hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#808080               gui=underline
 
-hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
@@ -114,6 +113,7 @@ if s:molokai_original == 1
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
+   hi VertSplit       guifg=#75715E guibg=#3E3D32 gui=bold
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#7E8E91
@@ -123,6 +123,7 @@ else
    hi LineNr          guifg=#465457 guibg=#232526
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
+   hi VertSplit       guifg=#7E8E91 guibg=#293739 gui=bold
 end
 
 "
@@ -132,9 +133,11 @@ if &t_Co > 255
    if s:molokai_original == 1
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
+      hi VertSplit    ctermfg=59  ctermbg=235   cterm=bold
    else
       hi Normal       ctermfg=252 ctermbg=233
       hi CursorLine               ctermbg=234   cterm=none
+      hi VertSplit    ctermfg=59  ctermbg=234   cterm=bold
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
@@ -205,7 +208,6 @@ if &t_Co > 255
    hi Type            ctermfg=81                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
-   hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=238
    hi Visual                      ctermbg=235
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
